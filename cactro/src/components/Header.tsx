@@ -16,7 +16,7 @@ const Header: React.FC<IHeaderProps> = ({ navItems }) => {
               src="https://1000logos.net/wp-content/uploads/2021/06/Slack-logo.png"
             />
           </a>
-          <nav className="flex space-x-4">
+          <nav className="flex space-x-4 hidden md:block">
             {navItems.map((item) => (
               <a key={item.text} href={item.url}>
                 {item.text}
@@ -25,14 +25,17 @@ const Header: React.FC<IHeaderProps> = ({ navItems }) => {
           </nav>
         </div>
         <div className="space-x-4">
-          <button className="py-2 px-4 font-bold">Sign in</button>
-          <button className="text-uppercase border border-custom-purple py-2 px-4 rounded-sm text-custom-purple font-bold">
+          <button className="py-2 px-4 font-bold hidden md:inline-block">
+            Sign in
+          </button>
+          <button className="text-uppercase border border-custom-purple py-2 px-4 rounded-sm text-custom-purple font-bold hidden lg:inline-block">
             Talk to sales
           </button>
-          <button className="text-uppercase bg-custom-purple py-2 px-4 rounded-sm text-white font-bold">
+          <button className="text-uppercase bg-custom-purple py-2 px-4 rounded-sm text-white font-bold hidden lg:inline-block">
             Try for free
           </button>
         </div>
+        <div className="block md:hidden">=</div>
       </div>
     </div>
   );
