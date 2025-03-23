@@ -1,5 +1,6 @@
 import Banner from "../components/Banner";
 import Companies from "../components/Companies";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Info from "../components/Info";
 import Notification from "../components/Notification";
@@ -46,6 +47,7 @@ const LandingPage: React.FC = () => {
         <Companies companies={companies} />
         <Info />
       </div>
+      <Footer />
     </div>
   );
 };
