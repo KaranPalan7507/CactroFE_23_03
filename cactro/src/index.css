@@ -2,6 +2,7 @@
 @theme {
   --color-custom-bg: #f7efe8;
   --color-custom-purple: #611f69;
+  --color-custom-blue: #0064a0;
 }
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

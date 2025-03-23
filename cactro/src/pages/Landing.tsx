@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Notification from "../components/Notification";
 
 const LandingPage: React.FC = () => {
   const navItems = [
@@ -11,6 +12,7 @@ const LandingPage: React.FC = () => {
     <div className="bg-custom-bg min-h-screen">
       <div className="container m-auto max-w-[90vw]">
         <Header navItems={navItems} />
+        <Notification />
       </div>
     </div>
   );
