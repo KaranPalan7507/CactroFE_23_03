@@ -16,7 +16,7 @@ const Header: React.FC<IHeaderProps> = ({ navItems }) => {
               src="https://1000logos.net/wp-content/uploads/2021/06/Slack-logo.png"
             />
           </a>
-          <nav className="flex space-x-4 hidden md:block">
+          <nav className="flex space-x-4 hidden md:block font-bold">
             {navItems.map((item) => (
               <a key={item.text} href={item.url}>
                 {item.text}

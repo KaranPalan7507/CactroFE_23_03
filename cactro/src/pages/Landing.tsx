@@ -1,3 +1,4 @@
+import AcceptCookie from "../components/AcceptCookie";
 import Banner from "../components/Banner";
 import Companies from "../components/Companies";
 import Footer from "../components/Footer";
@@ -46,6 +47,7 @@ const LandingPage: React.FC = () => {
         <Banner />
         <Companies companies={companies} />
         <Info />
+        <AcceptCookie />
       </div>
       <Footer />
     </div>
