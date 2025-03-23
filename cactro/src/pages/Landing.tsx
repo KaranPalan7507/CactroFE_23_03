@@ -1,6 +1,7 @@
 import Banner from "../components/Banner";
 import Companies from "../components/Companies";
 import Header from "../components/Header";
+import Info from "../components/Info";
 import Notification from "../components/Notification";
 const navItems = [
   { text: "Product", url: "#" },
@@ -43,6 +44,7 @@ const LandingPage: React.FC = () => {
         <Notification />
         <Banner />
         <Companies companies={companies} />
+        <Info />
       </div>
     </div>
   );
